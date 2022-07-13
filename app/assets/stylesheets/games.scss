@@ -1,0 +1,74 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+$black-bg: #3E3F4E;
+$gray: #F4F4F4;
+$purple: #635FC7;
+$light-purple: #625fc7e6;
+$white: #FFFFFF;
+$hover-purple: #828FA3;
+$b-radius: .6em;
+$btn-width: 15em;
+$field-width: 21em;
+$padding-tb: .6em;
+$poppins: 'Poppins', sans-serif;
+
+* {
+  font-family: $poppins;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $black-bg;
+  color: $white;
+  text-align: center;
+
+}
+
+.container {
+  padding: 2em;
+}
+
+
+.list-inline {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  font-size: 2.3em;
+} li {
+  background-color: $purple;
+  padding: .6em .8em;
+  border-radius: $b-radius;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+li:hover {
+  background-color: $light-purple;
+}
+
+.input-field {
+  width: 24em;
+  padding: $padding-tb;
+  border: 1px solid $purple;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: $b-radius;
+  letter-spacing: .1rem;
+}
+
+.form--btn {
+  padding: $padding-tb;
+  border-radius: $b-radius;
+  border: 1px solid $purple;
+  background-color: $purple;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+.word-attempt {
+  color: $light-purple;
+}
